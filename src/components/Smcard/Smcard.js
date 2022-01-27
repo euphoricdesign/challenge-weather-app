@@ -3,7 +3,7 @@ import './Smcard.scss';
 
 export default function Smcard() {
   return (
-    <div class="glass">
+    <div className="glass">
       <div className='hour'>
         16:00
 

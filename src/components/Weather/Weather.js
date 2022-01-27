@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Header from "../Header/Header";
+import Lgcard from "../Lgcard/Lgcard"
 import './Weather.scss';
 
 export default function Weather() {
@@ -39,6 +40,7 @@ export default function Weather() {
       {data && (
         <>
           <Header city={data.timezone} setLat={setLat} setLong={setLong}/>
+          <Lgcard data={data}/>
           <div className='weather'>
             <div>
               <img 
