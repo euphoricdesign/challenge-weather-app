@@ -1,0 +1,26 @@
+.weather {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  bottom: -400px;
+
+
+  .icon {
+    width: 60px;
+  }
+
+  .weather-text  {
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+  .weather-num {
+    color: white;
+    font-weight: 300;
+    font-size: 100px;
+    position: relative;
+    bottom: 20px;
+  }
+}

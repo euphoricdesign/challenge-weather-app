@@ -1,0 +1,15 @@
+.glass {
+  position: relative;
+  top: 220px;
+  width: 70px;
+  height: 85px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+}
+
+.hour {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+}

@@ -1,0 +1,23 @@
+.header {
+  font-family: 'Roboto', sans-serif;
+  height: 49px;
+
+  align-items: center;
+
+  .city {
+    font-size: 19px;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 0;
+
+    .time {
+      display: block;
+      font-size: 12px;
+    }
+  }
+
+
+  .selector {
+    width: 200px;
+  }
+}
