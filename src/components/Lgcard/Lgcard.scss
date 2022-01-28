@@ -2,11 +2,16 @@
 
 .glasslg {
   position: relative;
-  top: 120px;
+  top: 115px;
   // width: 420px;
   height: 120px;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 20px;
+
+  @media screen and (min-width: 700px) {
+    width: 600px;
+    margin: 0 auto;
+  }
 }
 
 .card-lg {

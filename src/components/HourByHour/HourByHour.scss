@@ -1,5 +1,11 @@
 .conteniner-hbh {
-  margin-left: 25px;
   position: relative;
   bottom: 160px;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (min-width: 600px) {
+    width: 600px;
+    margin: 0 auto;
+  }
 }

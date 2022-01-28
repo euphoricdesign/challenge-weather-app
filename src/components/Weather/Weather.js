@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Header from "../Header/Header";
 import Lgcard from "../Lgcard/Lgcard";
+import HourByHour from "../HourByHour/HourByHour"
 import './Weather.scss';
 
 export default function Weather() {
@@ -37,6 +38,7 @@ export default function Weather() {
       {data && (
         <>
           <Header city={data.timezone} setLat={setLat} setLong={setLong}/>
+          <HourByHour data={data} />
           <Lgcard data={data}/>
           <div className='weather'>
             <div>
