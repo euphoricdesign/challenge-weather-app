@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import './App.scss'
+import './App.scss';
 import Weather from "./components/Weather/Weather";
 
 

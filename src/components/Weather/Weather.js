@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Header from "../Header/Header";
-import Lgcard from "../Lgcard/Lgcard"
+import Lgcard from "../Lgcard/Lgcard";
 import './Weather.scss';
 
 export default function Weather() {
@@ -10,13 +10,13 @@ export default function Weather() {
   
   
   useEffect(() => { // Obtenemos longitud y latitud
-    const fetchData =  () => {
+    const fetchLocation =  () => {
       navigator.geolocation.getCurrentPosition(function(position) {
         setLat(position.coords.latitude);
         setLong(position.coords.longitude);
       });
     }
-    fetchData();
+    fetchLocation();
   }, [])
 
   useEffect(() => {
@@ -24,16 +24,13 @@ export default function Weather() {
       fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&units=metric&appid=44d95f92dd8b0f7ca8128054e136a315`)
         .then(res => res.json())
         .then(result => {
-          setData(result)
+          setData(result);
         });
     }
   }, [lat, long]);
 
-
   // Del mismo modo que puedes usar el Hook de estado más de una vez, puedes usar varios efectos. Esto nos permite separar la lógica que no está 
-  // relacionada en diferentes efectos.
-
-  console.log("data::::::::::::::::", data)
+  // relacionada en diferentes efectos
 
   return (
     <div>

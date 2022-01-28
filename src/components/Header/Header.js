@@ -1,78 +1,43 @@
 import React from 'react';
 import { Stack, Form } from 'react-bootstrap';
-import './Header.scss' 
+import { cities } from '../../constants/index';
+import './Header.scss';
 
-export default function Header(props) {
-
-  const ciudades = [
-    {
-      name: 'Tucumán',
-      lat: -26.8198,
-      long: -65.2169
-    },
-    {
-      name: 'Buenos Aires',
-      lat: -34.6083,
-      long: -58.3712
-    },
-    {
-      name: 'Cordoba',
-      lat: -31.417,
-      long: -64.183
-    },
-    {
-      name: 'Mendoza',
-      lat: -32.89084,
-      long: -68.82717
-    },
-    {
-      name: 'San juan',
-      lat: -31.5375,
-      long: -68.53639
-    }
-
-  ]
-
-
+export default function Header({ setLat, setLong, city }) {
   function eventHandler(e) {
     switch(e.target.value) {
-      case '1' : {
-        props.setLat(ciudades[0].lat)
-        props.setLong(ciudades[0].long)
-      }
-      break
-      case '2' : {
-        props.setLat(ciudades[1].lat)
-        props.setLong(ciudades[1].long)
-      }
-      break
-      case '3': {
-        props.setLat(ciudades[2].lat)
-        props.setLong(ciudades[2].long)
-      }
-      break
-      case '4' : {
-        props.setLat(ciudades[3].lat)
-        props.setLong(ciudades[3].long)
-      }
-      break
-      case '5' : {
-        props.setLat(ciudades[4].lat)
-        props.setLong(ciudades[4].long)
-      }
-      break
+      case '1':
+        setLat(cities[0].lat);
+        setLong(cities[0].long);
+        break;
+      case '2':
+        setLat(cities[1].lat);
+        setLong(cities[1].long);
+        break;
+      case '3': 
+        setLat(cities[2].lat);
+        setLong(cities[2].long);
+        break
+      case '4' :
+        setLat(cities[3].lat);
+        setLong(cities[3].long);
+        break
+      case '5' : 
+        setLat(cities[4].lat);
+        setLong(cities[4].long);
+        break
       default: console.log('default');
     }
-  }
+  };
 
   return (
     <Stack className='header' direction='horizontal'>
       {
-          props.city === 'America/Argentina/San_Juan' || 'America/Argentina/Buenos_Aires'
-          ? 
-          <h1 className='city'>{props.city.slice(18).replace('_', ' ')}</h1>
-          : 
-          <h1 className='city'>{props.city.slice(18)}</h1>
+        city === 'America/Argentina/San_Juan' || 'America/Argentina/Buenos_Aires'
+      ?
+        <h1 className='city'>{city.slice(18).replace('_', ' ')}</h1>
+      :
+        <h1 className='city'>{city.slice(18)}</h1>
       }
       <Form.Select onChange={eventHandler} aria-label="Default select example" className='selector ms-auto'>
         <option>Select a city</option>
