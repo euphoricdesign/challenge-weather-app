@@ -3,7 +3,7 @@
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
   position: relative;
-  bottom: 300px;
+  bottom: -300px;
 
   @media screen and (min-width: 700px){
     bottom: -170px;
