@@ -28,7 +28,7 @@ console.log("time:::::::", time1.toLocaleDateString("es-ES", options))
     <>
       <div className="glass">
         <div className='hour'>
-          {time1.toLocaleDateString("es-ES", options).slice(9)}
+          {time1.toLocaleDateString("es-ES", options).slice(10)}
           <span className='hbh'>{Math.round(data.hourly[1].temp) + "°"}</span>
           <img 
             className='icon'
@@ -39,7 +39,7 @@ console.log("time:::::::", time1.toLocaleDateString("es-ES", options))
       </div>
       <div className="glass">
         <div className='hour'>
-          {time2.toLocaleDateString("es-ES", options).slice(9)}
+          {time2.toLocaleDateString("es-ES", options).slice(10)}
           <span className='hbh'>{Math.round(data.hourly[2].temp) + "°"}</span>
           <img 
             className='icon'
@@ -50,7 +50,7 @@ console.log("time:::::::", time1.toLocaleDateString("es-ES", options))
       </div>
       <div className="glass">
         <div className='hour'>
-          {time3.toLocaleDateString("es-ES", options).slice(9)}
+          {time3.toLocaleDateString("es-ES", options).slice(10)}
           <span className='hbh'>{Math.round(data.hourly[3].temp) + "°"}</span>
           <img 
             className='icon'
@@ -61,7 +61,7 @@ console.log("time:::::::", time1.toLocaleDateString("es-ES", options))
       </div>
       <div className="glass">
         <div className='hour'>
-          {time4.toLocaleDateString("es-ES", options).slice(9)}
+          {time4.toLocaleDateString("es-ES", options).slice(10)}
           <span className='hbh'>{Math.round(data.hourly[4].temp) + "°"}</span>
           <img 
             className='icon'
@@ -72,7 +72,7 @@ console.log("time:::::::", time1.toLocaleDateString("es-ES", options))
       </div>
       <div className="glass">
         <div className='hour'>
-          {time5.toLocaleDateString("es-ES", options).slice(9)}
+          {time5.toLocaleDateString("es-ES", options).slice(10)}
           <span className='hbh'>{Math.round(data.hourly[5].temp) + "°"}</span>
           <img 
             className='icon'
