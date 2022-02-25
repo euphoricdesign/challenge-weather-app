@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Header from "../Header/Header";
 import Lgcard from "../Lgcard/Lgcard";
 import HourByHour from "../HourByHour/HourByHour"
+import DotLoader from "react-spinners/DotLoader"
 import './Weather.scss';
 
 export default function Weather() {
@@ -35,7 +36,7 @@ export default function Weather() {
 
   return (
     <div>
-      {data && (
+      {data ? (
         <>
           <Header city={data.timezone} setLat={setLat} setLong={setLong}/>
           <HourByHour data={data} />
@@ -52,7 +53,12 @@ export default function Weather() {
             <p className='weather-num'>{Math.round(data.current.temp)}°</p>
           </div>
         </>
-      )}
+      ): <div className="loader">
+      <DotLoader 
+        size={80} 
+        color={"#EEE5E9;"}
+        />
+    </div>}
     </div>
   );
 }
