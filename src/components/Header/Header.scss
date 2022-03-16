@@ -14,10 +14,18 @@
       display: block;
       font-size: 12px;
     }
+
+    @media only screen and (min-width: 280px) and (max-width: 360px) {
+      font-size: 16px;
+    }
   }
 
 
   .selector {
     width: 200px;
+
+    @media only screen and (min-width: 280px) and (max-width: 360px) {
+      height: 35px;
+    }
   }
 }

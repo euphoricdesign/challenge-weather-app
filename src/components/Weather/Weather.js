@@ -39,18 +39,20 @@ export default function Weather() {
       {data ? (
         <>
           <Header city={data.timezone} setLat={setLat} setLong={setLong}/>
-          <HourByHour data={data} />
-          <Lgcard data={data}/>
-          <div className='weather'>
-            <div>
-              <img 
-                className='icon'
-                src={`https://openweathermap.org/img/wn/${data.current.weather[0]["icon"]}@2x.png`} 
-                alt="" 
-              />
-              <span className='weather-text'>{data.current.weather[0].main}</span>
+          <div className='data-container'>
+            <HourByHour data={data} />
+            <Lgcard data={data}/>
+            <div className='weather'>
+              <div>
+                <img 
+                  className='icon'
+                  src={`https://openweathermap.org/img/wn/${data.current.weather[0]["icon"]}@2x.png`} 
+                  alt="" 
+                />
+                <span className='weather-text'>{data.current.weather[0].main}</span>
+              </div>
+              <p className='weather-num'>{Math.round(data.current.temp)}°</p>
             </div>
-            <p className='weather-num'>{Math.round(data.current.temp)}°</p>
           </div>
         </>
       ): <div className="loader">

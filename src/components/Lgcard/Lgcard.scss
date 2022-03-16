@@ -12,6 +12,11 @@
     width: 600px;
     margin: 0 auto;
   }
+
+  @media only screen and (min-width: 280px) and (max-width: 360px){
+    height: 108px;
+    top: 100px;
+  }
 }
 
 .card-lg {
@@ -37,6 +42,9 @@
 
     img {
       width: 50px;
+      @media only screen and (min-width: 280px) and (max-width: 360px) {
+        width: 45px;
+      }
     }
   }
 }
