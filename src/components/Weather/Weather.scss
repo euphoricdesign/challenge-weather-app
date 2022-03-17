@@ -2,7 +2,12 @@
   @media screen and (min-width: 768px){
     margin-top: 4%;
   }
+  @media only screen and (min-width: 280px) and (max-width: 384px) {
+    margin-top: 10%;
+  }
 }
+
+
 
 .weather {
   display: flex;
@@ -14,14 +19,19 @@
   @media screen and (min-width: 700px){
     bottom: -9rem;
   }
-  @media only screen and (min-width: 280px) and (max-width: 360px) {
-    bottom: -10rem;
+
+  @media only screen and (min-width: 390px) and (max-width: 500px) {
+    bottom: -16rem;
+  }
+
+  @media only screen and (min-width: 280px) and (max-width: 384px) {
+    bottom: -17rem;
   }
 
 
   .icon {
     width: 60px;
-    @media only screen and (min-width: 280px) and (max-width: 360px)  {
+    @media only screen and (min-width: 280px) and (max-width: 384px)  {
       width: 28px;
     }
   }
@@ -30,7 +40,7 @@
     color: white;
     font-weight: 300;
     font-size: 18px;
-    @media only screen and (min-width: 280px) and (max-width: 360px) {
+    @media only screen and (min-width: 280px) and (max-width: 384px) {
       font-size: 13px;
     }
   }
@@ -41,7 +51,8 @@
     font-size: 85px;
     position: relative;
     bottom: 12px;
-    @media only screen and (min-width: 280px) and (max-width: 360px) {
+    margin: 0;
+    @media only screen and (min-width: 280px) and (max-width: 384px) {
       font-size: 55px;
     }
   }

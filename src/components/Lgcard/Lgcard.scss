@@ -13,9 +13,9 @@
     margin: 0 auto;
   }
 
-  @media only screen and (min-width: 280px) and (max-width: 360px){
+  @media only screen and (min-width: 280px) and (max-width: 384px){
     height: 108px;
-    top: 100px;
+    top: 130px;
   }
 }
 
@@ -42,7 +42,7 @@
 
     img {
       width: 50px;
-      @media only screen and (min-width: 280px) and (max-width: 360px) {
+      @media only screen and (min-width: 280px) and (max-width: 384px) {
         width: 45px;
       }
     }
