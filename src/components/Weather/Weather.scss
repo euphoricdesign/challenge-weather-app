@@ -16,16 +16,16 @@
   position: relative;
   bottom: -12rem;
 
-  @media screen and (min-width: 700px){
-    bottom: -9rem;
+  @media screen and (min-width: 600px) and (max-width: 912px) {
+    bottom: -15rem;
   }
 
   @media only screen and (min-width: 390px) and (max-width: 500px) {
-    bottom: -16rem;
+    bottom: -15rem;
   }
 
   @media only screen and (min-width: 280px) and (max-width: 384px) {
-    bottom: -17rem;
+    bottom: -14rem;
   }
 
 
