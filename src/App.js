@@ -11,9 +11,7 @@ import Weather from "./components/Weather/Weather";
 function App() {
   return (
     <>
-      <div className="hero-img"></div>
       <Container className="container">
-        
         <Weather />  
       </Container>
     </>

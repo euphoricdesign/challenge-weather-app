@@ -2,7 +2,7 @@
 
 .glasslg {
   position: relative;
-  top: 100px;
+  top: 161px;
   // width: 420px;
   height: 120px;
   background: rgba(255, 255, 255, 0.5);
@@ -13,9 +13,9 @@
     margin: 0 auto;
   }
 
-  @media only screen and (min-width: 280px) and (max-width: 360px){
-    height: 108px;
-    top: 130px;
+  @media only screen and (min-device-width : 280px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+    top: 15vh;
+    height: 94px;
   }
 }
 
@@ -42,9 +42,14 @@
 
     img {
       width: 50px;
-      @media only screen and (min-width: 280px) and (max-width: 360px) {
-        width: 45px;
+      @media only screen and (min-device-width : 280px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+        width: 36px;
       }
+      
+    }
+
+    @media only screen and (min-device-width : 280px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+      font-size: 17px;
     }
   }
 }

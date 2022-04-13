@@ -7,32 +7,41 @@
   }
 }
 
-
+.contenedor-de-todo {
+  height: 100%;
+}
 
 .weather {
   display: flex;
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
-  position: relative;
-  bottom: -12rem;
+  position: absolute;
+  top: 70vh;
 
-  @media screen and (min-width: 600px) and (max-width: 912px) {
-    bottom: -15rem;
+  // @media screen and (min-width: 600px) and (max-width: 912px) {
+  //   top: 80vh;
+  // }
+
+  @media only screen and (min-width: 481px) and (max-width: 912px) {
+    top: 80vh;
   }
 
-  @media only screen and (min-width: 390px) and (max-width: 500px) {
-    bottom: -15rem;
+  /* iPhone 4 ----------- */
+  @media only screen and (min-device-width : 280px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+    
   }
-
-  @media only screen and (min-width: 280px) and (max-width: 384px) {
-    bottom: -14rem;
+  
+  @media only screen and (min-device-width : 280px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+    top: 77vh;
   }
 
 
   .icon {
     width: 60px;
-    @media only screen and (min-width: 280px) and (max-width: 384px)  {
-      width: 28px;
+
+    @media only screen and (min-device-width : 280px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+      top: 77vh;
+      width: 40px;
     }
   }
 
@@ -40,8 +49,8 @@
     color: white;
     font-weight: 300;
     font-size: 18px;
-    @media only screen and (min-width: 280px) and (max-width: 384px) {
-      font-size: 13px;
+    @media only screen and (min-device-width : 280px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+      font-size: 15px;
     }
   }
 
@@ -52,8 +61,8 @@
     position: relative;
     bottom: 12px;
     margin: 0;
-    @media only screen and (min-width: 280px) and (max-width: 384px) {
-      font-size: 55px;
+    @media only screen and (min-device-width : 280px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+      font-size: 48px;
     }
   }
 }

@@ -1,11 +1,12 @@
 .glass {
   position: relative;
-  top: 220px;
+  top: 300px;
   width: 70px;
   height: 85px;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 20px;
-  @media only screen and (min-width: 280px) and (max-width: 360px){
+  @media only screen and (min-device-width : 280px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+    font-size: 14px;
     width: 57px;
     height: 75px;
   }
