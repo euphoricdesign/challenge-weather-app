@@ -1,14 +1,17 @@
 .glass {
   position: relative;
-  top: 300px;
+  top: 290px;
   width: 70px;
   height: 85px;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 20px;
   @media only screen and (min-device-width : 280px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
-    font-size: 14px;
     width: 57px;
-    height: 75px;
+    height: 80px;
+    top: 220px
+  }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+    font-size: 14px;
   }
 }
 
@@ -19,11 +22,12 @@
   align-items: center;
 
   .icon {
-    width: 28px;
+    width: 30px;
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+      width: 25px;
+    }
   }
 
-  @media only screen and (min-width: 280px) and (max-width: 360px) {
-    font-size: 14px;
-  }
+  
 }
 
